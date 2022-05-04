@@ -1,5 +1,8 @@
 import React from 'react';
-import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { FaSearch } from 'react-icons/fa';
+import { FiLogIn } from 'react-icons/fi';
+import { Container, Form, FormControl, Nav, Navbar, NavDropdown } from 
+'react-bootstrap';
 import './Header.css';
 
 const Header = () => {
@@ -26,7 +29,7 @@ const Header = () => {
                                 className="me-2"
                                 aria-label="Search"
                             />
-                            <Button variant="outline-success">Search</Button>
+                            <FaSearch/>
                         </Form>
                         <NavDropdown title="Link" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -36,7 +39,7 @@ const Header = () => {
                                 Something else here
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#action1">Login</Nav.Link>
+                        <Nav.Link href="#action1">Login <FiLogIn/></Nav.Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
