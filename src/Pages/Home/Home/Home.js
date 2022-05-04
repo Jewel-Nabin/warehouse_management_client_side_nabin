@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Feedback from '../Feedback/Feedback';
 import Items from '../Items/Items';
+import Testimonials from '../Testimonials/Testimonials';
 import './Home.css';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Items></Items>
-            <Feedback></Feedback>
+            <Testimonials></Testimonials>
         </div>
     );
 };

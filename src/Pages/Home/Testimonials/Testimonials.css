@@ -6,13 +6,13 @@
 
 .carousel-style {
     height: 70vh;
-    
+
 }
 
-.img-style {
+.img-style-feedback {
     /* margin: 0 auto; */
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 45%;
     border-radius: 50%;
 }
