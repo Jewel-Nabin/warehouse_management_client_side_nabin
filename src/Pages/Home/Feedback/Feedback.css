@@ -1,0 +1,18 @@
+.div-style {
+    height: 70vh;
+    background-image: url('../../../images/feedback/feed-back-img.jpg');
+    background-size: cover;
+}
+
+.carousel-style {
+    height: 70vh;
+    
+}
+
+.img-style {
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    border-radius: 50%;
+}
