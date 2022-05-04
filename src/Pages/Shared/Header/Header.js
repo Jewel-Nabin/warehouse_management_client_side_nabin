@@ -20,7 +20,7 @@ const Header = () => {
                         >
                             <Nav.Link href="#action1">Home</Nav.Link>
                             <Nav.Link href="#action2">Inventory</Nav.Link>
-                            <Nav.Link href="#action2">Blog</Nav.Link>
+                            <Nav.Link to={"blogs"}>Blog</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <FormControl
