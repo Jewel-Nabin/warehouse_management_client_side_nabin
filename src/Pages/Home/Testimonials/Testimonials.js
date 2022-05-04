@@ -9,7 +9,7 @@ import { Carousel } from 'react-bootstrap';
 
 const Testimonials = () => {
     return (
-        <div>
+        <div className='testimonials'>
             <h2>Testimonials</h2>
             <div className='div-style'>
                 <Carousel controls={false} className='carousel-style'>

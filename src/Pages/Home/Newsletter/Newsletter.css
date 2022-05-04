@@ -1,0 +1,24 @@
+.news-letter {
+    margin-bottom: 100px;
+
+}
+
+.news-bg {
+    height: 70vh;
+    background-image: url('../../../images/img/sabrianna-Y_bxfTa_iUA-unsplash.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.subscribe {
+    background-color: #242227;
+    color: white;
+    border: white 20px solid;
+}
+
+/* .position {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+} */
