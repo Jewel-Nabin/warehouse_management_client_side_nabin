@@ -1,16 +1,25 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { FaSearch } from 'react-icons/fa';
-import { FiLogIn } from 'react-icons/fi';
+// import { FiLogIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { Container, Form, FormControl, Nav, Navbar, NavDropdown } from 
 'react-bootstrap';
 import './Header.css';
+import auth from '../../../firebase.init';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
     return (
         <header>
             <Navbar className='d-flex' bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#">Jewels Sparkles</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">Jewels Sparkles</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -18,9 +27,9 @@ const Header = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Inventory</Nav.Link>
-                            <Nav.Link to={"blogs"}>Blog</Nav.Link>
+                            <Nav.Link as={Link} to="home">Home</Nav.Link>
+                            <Nav.Link as={Link} to="item">Inventory</Nav.Link>
+                            <Nav.Link as={Link} to="blogs">Blog</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <FormControl
@@ -39,7 +48,24 @@ const Header = () => {
                                 Something else here
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#action1">Login <FiLogIn/></Nav.Link>
+                        <Nav>
+                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            {
+                                user && <>
+                                    <Nav.Link as={Link} to="addservice">Add</Nav.Link>
+                                    <Nav.Link as={Link} to="manage">Manage</Nav.Link>
+                                    <Nav.Link as={Link} to="orders">Orders</Nav.Link>
+                                </>
+                            }
+                            {
+                                user ?
+                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                                    :
+                                    <Nav.Link as={Link} to="login">
+                                        Login
+                                    </Nav.Link>}
+                        </Nav>
+                        {/* <Nav.Link as={Link} to="login">Login <FiLogIn/></Nav.Link> */}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

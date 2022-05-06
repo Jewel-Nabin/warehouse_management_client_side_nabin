@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
+import { BsArrowUpSquareFill } from 'react-icons/bs';
 import './Footer.css';
 
 const Footer = () => {
@@ -7,45 +8,46 @@ const Footer = () => {
     const year = today.getFullYear();
     return (
         <footer>
-            <div className='container d-flex'>
-                <div className='row'>
-                    <p>INFORMATION</p>
-                    <p><small>About Us</small></p>
-                    <p><small>Delivery Information</small></p>
-                    <p><small>Privacy Policy</small></p>
-                    <p><small>Terms & Conditions</small></p>
+            <div className='footer'>
+                <div className='row '>
+                    <p className='fw-bold'>INFORMATION</p>
+                    <a href="#" className='link-style'>About Us</a>
+                    <a href="#" className='link-style'>Delivery Information</a>
+                    <a href="#" className='link-style'>Privacy Policy</a>
+                    <a href="#" className='link-style'>Terms & Conditions</a>
                 </div>
                 <div className='row'>
-                    <p><small> &copy; {year} Jewels Sparkles all Rights Reserved. </small></p>
+                    <p>&copy; {year} Jewels Sparkles all Rights Reserved.</p>
                     <div className='me-5'>
-                        <FaFacebookF className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} />
+                        <a href="#" className='link-style'><FaFacebookF className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} /></a>
                     </div>
 
                     <div className='me-5'>
-                        <FaTwitter className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} />
+                        <a href="#" className='link-style'><FaTwitter className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} /></a>
                     </div>
 
                     <div className='me-5'>
-                        <FaLinkedinIn className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} />
+                        <a href="#" className='link-style'><FaLinkedinIn className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} /></a>
                     </div>
 
                     <div className='me-5'>
-                        <FaPinterestP className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} />
+                        <a href="#" className='link-style'><FaPinterestP className='inline-block p-7 rounded-full w-20 mx-auto' style={{ background: "#FFFFFF", color: "#272121", fontSize: "1.2em" }} /></a>
                     </div>
                 </div>
                 <div className='row'>
                     <div>
-                        <p>CONTACT US</p>
-                        <p><small>Nabin Tower, Boalkhli, Chattogram</small></p>
+                        <p className='fw-bold'>CONTACT US</p>
+                        <a href="#" className='link-style'>Nabin Tower, Boalkhli, Chattogram</a>
                     </div>
                     <div>
                         <p>Phone</p>
-                        <p><small>+88 0179000000</small></p>
+                        <a href="#" className='link-style'>+88 0179000000</a>
                     </div>
                     <div>
                         <p>Email</p>
-                        <p><small>jewelnabin@gmail.com</small></p>
+                        <a href="#" className='link-style'>jewelnabin@gmail.com</a>
                     </div>
+                    <a href="#"><button className='btn-lg btn-style'><BsArrowUpSquareFill /></button></a>
                 </div>
             </div>
         </footer>
