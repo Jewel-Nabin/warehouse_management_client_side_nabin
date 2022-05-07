@@ -3,4 +3,25 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.big-font {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.go-back {
+    background-color: #FBF8F1;
+    padding: 10px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 50px;
+}
+
+.go-back:hover {
+    background-color: orange;
+    color: white;
 }

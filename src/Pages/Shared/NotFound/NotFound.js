@@ -1,14 +1,14 @@
 import React from 'react';
 import './NotFound.css';
-// import notFound from '../../../images/notFound/404.jpg';
 
 const NotFound = () => {
     return (
         <div className='notFound'>
-            {/* <img className='notFound' src={notFound} alt="" /> */}
-            <button>Go to Home</button>
+            <p className='big-font'>404</p>
+            <h2>OOPS! PAGE NOT FOUND</h2>
+            <button className='go-back'>GO BACK TO HOMEPAGE</button>
         </div>
     );
 };
 
-export default NotFound;
+export default NotFound; 
