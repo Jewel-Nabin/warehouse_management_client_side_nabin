@@ -9,6 +9,7 @@ import { Container, Form, FormControl, Nav, Navbar, NavDropdown } from
 import './Header.css';
 import auth from '../../../firebase.init';
 import logo from '../../../images/png/logo.png';
+import PageTitle from '../PageTitle/PageTitle';
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -21,6 +22,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
+                        <PageTitle title={"home"}></PageTitle>
                         <img height={60} src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -34,9 +36,9 @@ const Header = () => {
                             <Nav.Link as={Link} to="about">About</Nav.Link>
                             {
                                 user && <>
-                                <Nav.Link as={Link} to="addservice">Add</Nav.Link>
-                                <Nav.Link as={Link} to="manage">Manage</Nav.Link>
-                                <Nav.Link as={Link} to="orders">Orders</Nav.Link>
+                                    <Nav.Link as={Link} to="additem">Add</Nav.Link>
+                                    <Nav.Link as={Link} to="manage">Manage</Nav.Link>
+                                    <Nav.Link as={Link} to="orders">Orders</Nav.Link>
                                 </>
                             }
                             {

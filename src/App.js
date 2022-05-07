@@ -12,6 +12,8 @@ import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import CheckOut from './Pages/CheckOut/CheckOut';
 import ItemDetail from './Pages/Home/ItemDetail/ItemDetail';
+import AddItem from './Pages/AddItem/AddItem';
+import ManageItems from './Pages/ManageItems/ManageItems';
 
 function App() {
   return (
@@ -27,9 +29,23 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route
-          path="/checkout/:serviceId" element={
+          path="/checkout/:itemId" element={
             <RequireAuth>
               <CheckOut></CheckOut>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/additem" element={
+            <RequireAuth>
+              <AddItem></AddItem>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manage" element={
+            <RequireAuth>
+              <ManageItems></ManageItems>
             </RequireAuth>
           }
         ></Route>

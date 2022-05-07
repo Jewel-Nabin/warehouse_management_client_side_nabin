@@ -4,10 +4,12 @@ import node1 from '../../../src/images/blogs/node.png';
 import sql from '../../../src/images/blogs/sql.png';
 import jwt from '../../../src/images/blogs/jwt.jpg';
 import mongodb from '../../../src/images/blogs/mongodb.png'
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const Blogs = () => {
     return (
         <div className='blogs'>
+            <PageTitle title={"blogs"}></PageTitle>
             <div className='container js-node'>
                 <img className='w-75' src={node1} alt="" />
                 <div className=' text-start'>

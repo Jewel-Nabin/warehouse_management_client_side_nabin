@@ -1,4 +1,10 @@
+.main-signin {
+    background-color: #FFFFFF;
+}
+
 .register-form {
+    border: 1px solid orange;
+    background-color: #EDC6A5;
     margin: 0 auto;
     width: 50%;
     height: 100vh;

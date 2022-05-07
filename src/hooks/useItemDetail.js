@@ -4,11 +4,11 @@ const useItemDetail = itemId => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = ``;
+        const url = `http://localhost:5000/item`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
-    }, [setItem]);
+    }, [itemId]);
     return (item);
 };
 
