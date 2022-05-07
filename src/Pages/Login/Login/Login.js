@@ -63,9 +63,9 @@ const Login = () => {
 
     return (
         <div className='main'>
-            <div className='container w-50 mx-auto'>
+            <div className='container w-50 mx-auto login-form'>
                 <PageTitle title="Login"></PageTitle>
-                <h2 className='text-primary text-center mt-2'>Please Login</h2>
+                <h2 className='text-primary text-center mt-2'>LogIn</h2>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control ref={emailRef} name="email" type="email" placeholder="Enter email" required />
@@ -73,13 +73,13 @@ const Login = () => {
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control ref={passwordRef} name="password" type="password" placeholder="Password" required />
                     </Form.Group>
-                    <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                    <Button style={{backgroundColor: 'gray', borderRadius: '100px'}} variant="primary w-50 mx-auto d-block mb-2" type="submit">
                         Login
                     </Button>
                 </Form>
                 {errorElement}
-                <p>New to Jewels Sparkles? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-                <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+                <p><small>New to Sparkle's?</small><Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}><small>Please SignUp</small></Link> </p>
+                <p><small>Forget Password?</small><button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}><small>Reset Password</small></button> </p>
                 <SocialLogin></SocialLogin>
                 <ToastContainer />
             </div>

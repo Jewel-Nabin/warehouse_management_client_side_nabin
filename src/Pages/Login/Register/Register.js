@@ -44,7 +44,7 @@ const Register = () => {
 
     return (
         <div className='register-form'>
-            <h2 style={{ textAlign: 'center' }}>Please Register</h2>
+            <h4 style={{ textAlign: 'center' }}>SignUp</h4>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name' />
 
@@ -53,14 +53,15 @@ const Register = () => {
                 <input type="password" name="password" id="" placeholder='Password' required />
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
 
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Balance Yoga's Terms and Conditions</label>
+                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms"><small>Accept Sparkle's Terms and Conditions?</small></label>
                 <input
                     disabled={!agree}
-                    className='w-50 mx-auto btn btn-primary mt-2'
+                    style={{backgroundColor: 'gray'}}
+                    className='w-50 mx-auto btn mt-2'
                     type="submit"
                     value="Register" />
             </form>
-            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+            <p><small>Already have an account?</small><Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}><small>Please Login</small></Link> </p>
             <SocialLogin></SocialLogin>
         </div>
     );
