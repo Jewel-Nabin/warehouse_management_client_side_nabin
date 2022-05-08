@@ -4,7 +4,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 
 import { FcGoogle } from "react-icons/fc";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsFacebook } from "react-icons/bs";
 
 
 import './SocialLogin.css';
@@ -13,7 +13,6 @@ import { useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
-    // const [signInWithFacebook, user2, loading3, error4] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
 
     let errorElement;
@@ -45,11 +44,9 @@ const SocialLogin = () => {
                     className='btn mx-auto px-2'>
                     <BsGithub/>
                 </button>
-                {/* <button
-                    onClick={() => signInWithFacebook()}
-                    className='btn mx-auto px-2' style={{ color: '#0B5ED7'}}>
+                <button className='btn mx-auto px-2' style={{ color: '#0B5ED7' }}>
                     <BsFacebook/>
-                </button> */}
+                </button>
             </div>
         </div>
     );

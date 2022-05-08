@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
 import { BsArrowUpSquareFill } from 'react-icons/bs';
 import './Footer.css';
+import { ToastContainer } from 'react-bootstrap';
 
 const Footer = () => {
     const today = new Date();
@@ -49,6 +50,7 @@ const Footer = () => {
                     </div>
                     <a href="#"><button className='btn border-0 fixed-bottom'><BsArrowUpSquareFill style={{color: 'orange'}} /></button></a>
                 </div>
+                <ToastContainer />
             </div>
         </footer>
     );

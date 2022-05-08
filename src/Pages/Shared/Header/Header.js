@@ -1,10 +1,8 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { FaSearch } from 'react-icons/fa';
-// import { FiLogIn } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { Container, Form, FormControl, Nav, Navbar, NavDropdown } from 
+import { Container, Nav, Navbar } from 
 'react-bootstrap';
 import './Header.css';
 import auth from '../../../firebase.init';
@@ -33,12 +31,11 @@ const Header = () => {
                             <Nav.Link as={Link} to="blogs">Blog</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="about">About</Nav.Link>
                             {
                                 user && <>
-                                    <Nav.Link as={Link} to="additem">Add</Nav.Link>
-                                    <Nav.Link as={Link} to="manage">Manage</Nav.Link>
-                                    <Nav.Link as={Link} to="orders">Orders</Nav.Link>
+                                    <Nav.Link as={Link} to="additem">Add Item</Nav.Link>
+                                    <Nav.Link as={Link} to="manage">Manage Item</Nav.Link>
+                                    <Nav.Link as={Link} to="orders">My Item</Nav.Link>
                                 </>
                             }
                             {

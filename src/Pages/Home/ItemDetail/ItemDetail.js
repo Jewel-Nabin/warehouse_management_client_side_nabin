@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useItemDetail from '../../../hooks/useItemDetail';
 import './ItemDetail.css';
 
 const ItemDetail = () => {
 
     const { itemId } = useParams();
-    // const [item] = useItemDetalil(itemId);
+    // const [item] = useItemDetail(itemId);
 
     return (
         <div>

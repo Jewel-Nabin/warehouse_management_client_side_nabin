@@ -1,3 +1,54 @@
+* UI Site-Name: Sparkle
+* Site-Link: Open[https://jewels-sparkles.web.app/]
+
+
+Sparkle is an attractive, flexible warehouse website. This website includes a stunning layout and powerful module with innovative design that would easily fit onto your new or existing online store/warehouse. It is easy and fast to set up a web shop/warehouse. It has compatibility and friendliness with Mobile devices.
+
+Let’s elevate your business to another level, starting with this website.
+
+Features I added: 
+* Unique Home Page
+* Fast and Easy Use
+* Fully responsive
+* Unique Header
+* Our Inventory
+* Testimonials
+* Blog Module
+* Product Wishlist
+* Back To Top Button
+* Newsletter Popup
+* Design your own Header and Footer
+* Google Fonts
+* Fully documented
+
+Included Files:	
+* HTML
+* CSS
+* JS
+* React
+* firebase
+* react
+* router
+* node
+* express
+* mongodb
+
+Templates Include:
+* Home
+* Inventory
+* Blog
+* Login
+* Logout
+* Register
+* Add Item
+* Manage Item
+* My Item
+* 404 Page
+* Header
+* Footer
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,7 +60,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://jewels-sparkles.web.app/](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.

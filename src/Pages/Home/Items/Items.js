@@ -9,7 +9,7 @@ const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/item')
+        fetch('https://mysterious-fortress-67873.herokuapp.com/item')
             .then(res => res.json())
             .then(data => setItems(data));
     }, []);
@@ -18,7 +18,7 @@ const Items = () => {
         <div id="items" className='container'>
             <PageTitle title={"Inventory"}></PageTitle>
             <div className="row">
-                <h2 className='text-center mt-1 mb-2' style={{ color: 'gray'}}>Our Inventories</h2>
+                <h2 className='text-center mt-1 mb-2' style={{ color: 'gray' }}>Our Inventories</h2>
                 <div className="items-container">
                     {
                         items.map(item => <Item

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Button, Form, ToastContainer } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -82,7 +82,6 @@ const Login = () => {
                 <p><small>New to Sparkle's?</small><Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}><small> Please SignUp</small></Link> </p>
                 <p><small>Forget Password?</small><button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}><small>Reset Password</small></button> </p>
                 <SocialLogin></SocialLogin>
-                <ToastContainer />
             </div>
         </div>
     );

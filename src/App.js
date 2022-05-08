@@ -1,7 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
-import About from './Pages/About/About';
 import Header from './Pages/Shared/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer';
 import Blogs from './Pages/Blogs/Blogs';
@@ -14,6 +13,7 @@ import CheckOut from './Pages/CheckOut/CheckOut';
 import ItemDetail from './Pages/Home/ItemDetail/ItemDetail';
 import AddItem from './Pages/AddItem/AddItem';
 import ManageItems from './Pages/ManageItems/ManageItems';
+import Order from './Pages/Order/Order';
 
 function App() {
   return (
@@ -24,7 +24,6 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/item' element={<Items></Items>}></Route>
         <Route path='/item/:itemId' element={<ItemDetail></ItemDetail>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
@@ -46,6 +45,13 @@ function App() {
           path="/manage" element={
             <RequireAuth>
               <ManageItems></ManageItems>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/orders" element={
+            <RequireAuth>
+              <Order></Order>
             </RequireAuth>
           }
         ></Route>

@@ -11,6 +11,7 @@ const CheckOut = () => {
     const { itemId } = useParams();
     const [item] = useItemDetail(itemId);
     const [user] = useAuthState(auth);
+
     const handlePlaceOrder = event => {
         event.preventDefault();
         const order = {
@@ -20,7 +21,7 @@ const CheckOut = () => {
             address: event.target.address.value,
             phone: event.target.phone.value
         }
-        axios.post('http://localhost:5000/item', order)
+        axios.post('https://mysterious-fortress-67873.herokuapp.com/order', order)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
