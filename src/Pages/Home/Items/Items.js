@@ -18,7 +18,7 @@ const Items = () => {
         <div id="items" className='container'>
             <PageTitle title={"Inventory"}></PageTitle>
             <div className="row">
-                <h1 className='text-primary text-center mt-5'> Products</h1>
+                <h2 className='text-center mt-1 mb-2' style={{ color: 'gray'}}>Our Inventories</h2>
                 <div className="items-container">
                     {
                         items.map(item => <Item

@@ -3,20 +3,19 @@
 }
 
 .div-style {
-    height: 70vh;
-    background-image: url('../../../images/bg-img/istockphoto-1161683700-612x612.jpg');
+    height: 80vh;
+    background-image: url('../../../images/Inventory/testimonial.jpeg');
     background-size: cover;
 }
 
 .carousel-style {
-    height: 70vh;
-
+    height: 80vh;
 }
 
 .img-style-feedback {
     /* margin: 0 auto; */
     position: absolute;
     top: 20%;
-    left: 45%;
+    left: 46%;
     border-radius: 50%;
 }

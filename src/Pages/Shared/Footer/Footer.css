@@ -2,15 +2,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    background-color: #242227;
     padding: 100px;
-    color: white;
+    color: black;
     /* margin: 10px; */
 }
 
 .link-style {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .btn-style {

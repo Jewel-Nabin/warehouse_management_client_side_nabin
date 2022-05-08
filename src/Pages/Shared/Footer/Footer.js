@@ -8,7 +8,7 @@ const Footer = () => {
     const year = today.getFullYear();
     return (
         <footer>
-            <div className='footer'>
+            <div style={{ backgroundColor: '#FFF2E9'}} className='footer'>
                 <div className='row '>
                     <p className='fw-bold'>INFORMATION</p>
                     <a href="#" className='link-style'>About Us</a>
@@ -47,7 +47,7 @@ const Footer = () => {
                         <p>Email</p>
                         <a href="#" className='link-style'>jewelnabin@gmail.com</a>
                     </div>
-                    <a href="#"><button className='btn-lg btn-style'><BsArrowUpSquareFill /></button></a>
+                    <a href="#"><button className='btn border-0 fixed-bottom'><BsArrowUpSquareFill style={{color: 'orange'}} /></button></a>
                 </div>
             </div>
         </footer>

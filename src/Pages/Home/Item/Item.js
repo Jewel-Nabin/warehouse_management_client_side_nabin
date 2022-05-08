@@ -19,7 +19,7 @@ const Item = ({item}) => {
             <p><small>{description}</small></p>
             <p>Quantity: {quantity}</p>
             <p className='fw-bolder'><small>by</small> {supplier_name}</p>
-            <button onClick={() => navigateToitemDetail(_id)} className='btn btn-primary'>UPDATE</button>
+            <button onClick={() => navigateToitemDetail(_id)} className='btn' style={{ backgroundColor: '#282624', color: 'white'}}>UPDATE</button>
         </div>
     );
 };
